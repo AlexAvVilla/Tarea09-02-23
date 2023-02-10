@@ -28,10 +28,13 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         btnCatedrático = new javax.swing.JButton();
+        btnAlex = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnCatedrático.setText("Catedrático");
+
+        btnAlex.setText("Alex Avila");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -39,7 +42,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(btnCatedrático)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAlex)
+                    .addComponent(btnCatedrático))
                 .addContainerGap(273, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -47,7 +52,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addComponent(btnCatedrático)
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(btnAlex)
+                .addContainerGap(166, Short.MAX_VALUE))
         );
 
         pack();
@@ -89,6 +96,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnAlex;
     public javax.swing.JButton btnCatedrático;
     // End of variables declaration//GEN-END:variables
 }

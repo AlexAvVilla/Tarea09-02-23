@@ -23,6 +23,7 @@ public class nombresController implements ActionListener {
      
      //PONER A LA ESCUCHA LOS BOTONES ANTES DE LEVANTAR LA VISTA PRINCIPAL
      this.VistaPrincipal.btnCatedrático.addActionListener(this);
+     this.VistaPrincipal.btnAlex.addActionListener(this);
      
      //LEVANTAR LA VISTA PRINCIPAL QUE CONTIENE TODOS LOS BOTONES DE ESTUDIANTES
      this.VistaPrincipal.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
@@ -34,7 +35,7 @@ public class nombresController implements ActionListener {
         {
             JOptionPane.showMessageDialog(null, "Mi nombre es: DANY MIRANDA", "PROBANDO MVC", 2 );
         }
-        if(e.getSource()==this.VistaPrincipal.btnCatedrático)
+        if(e.getSource()==this.VistaPrincipal.btnAlex)
         {
             JOptionPane.showMessageDialog(null, "Mi nombre es: ALEX AVILA", "PROBANDO MVC", 2 );
         }
