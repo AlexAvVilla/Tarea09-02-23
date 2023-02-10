@@ -34,6 +34,10 @@ public class nombresController implements ActionListener {
         {
             JOptionPane.showMessageDialog(null, "Mi nombre es: DANY MIRANDA", "PROBANDO MVC", 2 );
         }
+        if(e.getSource()==this.VistaPrincipal.btnCatedrático)
+        {
+            JOptionPane.showMessageDialog(null, "Mi nombre es: ALEX AVILA", "PROBANDO MVC", 2 );
+        }
     }
  
  
